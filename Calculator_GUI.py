@@ -57,7 +57,6 @@ def press_equal():
 
 window = Tk()
 window.title("Calculator")
-##window.configure(bg = "orange")
 
 eqn = StringVar()
 
@@ -89,12 +88,12 @@ button0.grid(row = 5, column = 0)
 
 # Operations
 
-onebyx = Button(window, text = "1/x", command = reciprocal, height = 3, width = 12)
-onebyx.grid(row = 1, column = 0)
+one_by_x = Button(window, text = "1/x", command = reciprocal, height = 3, width = 12)
+one_by_x.grid(row = 1, column = 0)
 square = Button(window, text = "x**2", command = square, height = 3, width = 12)
 square.grid(row = 1, column = 1)
-squareroot = Button(window, text = "sqrt(x)", command = square_root, height = 3, width = 12)
-squareroot.grid(row = 1, column = 2)
+square_root = Button(window, text = "sqrt(x)", command = square_root, height = 3, width = 12)
+square_root.grid(row = 1, column = 2)
 plus = Button(window, text = "+", command = lambda: press("+"), height = 3, width = 12)
 plus.grid(row = 1, column = 3)
 minus = Button(window, text = "-", command = lambda: press("-"), height = 3, width = 12)
